@@ -1,0 +1,14 @@
+<html>
+  <head><title>Fruit Picker</title> </head>
+  <body>
+    <form action="/favorite_fruit" method="POST">
+      <p> What is your favourite fruit? </p>
+      {% for fruit in fruits %}
+        <p>
+          <input type="radio" name="fruit" value="{{fruit}}">{{fruit}}</a>
+        </p>
+      {% endfor %}
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
